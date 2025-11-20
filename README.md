@@ -1,9 +1,7 @@
 # QuizLLMproject2
 Repo for my LLM analysis task - project 2 - IITM - Data Science and Applications
 
-
-This project is a local LLM-powered quiz/assignment solver that runs on your machine and exposes an API endpoint using ngrok.
-You can send URLs (quiz pages, PDFs, text pages) to the solver and get back processed answers.
-
+This project is a local quiz/assignment solver that runs entirely on your machine using FastAPI and a Groq LLM–powered universal solver.
+I exposed my server using ngrok, so no deployment (Railway/Render) is required.
 
 This project is licensed under the MIT License.
