@@ -172,18 +172,6 @@ def solve_demo_audio(text: str, html: str, base_url: str, email_for_cutoff: str)
 
     # Compute sum of first column >= cutoff
     answer = read_first_column_sum(csv_path, cutoff_val)
-    print("DEBUG CUTOFF:", cutoff_val)
-
-    import shutil
-    shutil.copy(csv_path, "debug_audio.csv")
-
-    print("\nCSV FILE PATH:", csv_path, "\n")
-
-
-    '''try:
-        os.remove(csv_path)
-    except:
-        pass'''
 
     return answer
 
@@ -365,3 +353,4 @@ def run_task(req: TaskRequest):
     log(f"[TASK] Finished in {int(total)}s steps={step}")
 
     return {"status": "done", "steps": step, "time_s": int(total)}
+
